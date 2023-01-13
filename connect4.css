@@ -1,0 +1,68 @@
+body {
+  font-family: Quicksand;
+  background-color: #282828;
+  text-align: center;
+  color: gold;
+  margin-top: 2rem;
+}
+
+h1 {
+  margin-left: auto; 
+  margin-right: auto;
+  min-width: 400px;
+  max-width: 400px;
+  margin-top: 1.5rem;
+}
+
+input {
+  color: gold;
+  background-color: #282828;
+  border: none;
+  cursor: pointer;
+}
+
+#rules{ 
+  margin-top: 2rem;
+}
+/* game board table */
+#game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 460px;
+  margin-top: 2rem;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+button {
+  font-family: Quicksand;
+  color: gold;
+  background-color: #282828;
+  border-color: gold;
+  margin-top: 2rem;
+  cursor: pointer;
+}

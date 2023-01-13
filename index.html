@@ -1,0 +1,31 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Connect 4</h1>
+  <input type="color" id="p1-color">Player 1
+  <input type="color" id="p2-color">Player 2
+
+  <div id="rules">
+    <h3>Rules</h3>
+    <p>Player 1 and Player 2 take turns selecting a column. <br><br>
+        On each turn, a piece is dropped down the selected column until a player <br><br> gets four-in-a-row to win the game. <br><br>
+        Horizontal, vertical, or diagonal alignments all work.<br><br> If the board fills with no winner, 
+        the game results in a tie.<br><br>Good luck!
+    </p>
+</div>
+
+  <div id="game">
+    <table id="board"></table>
+  </div>
+  <div id="buttons">
+    <button id="start">Start Game!</button>
+</div>
+<script src="connect4.js"></script>
+</body>
+</html>
